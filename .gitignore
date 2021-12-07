@@ -1,0 +1,10 @@
+workspace.xml
+tasks.xml
+dataSources.ids
+dataSources.xml
+*.iml
+src/main/resources/diag.default.properties
+.idea/*
+.settings/*
+.idea/modules.xml
+target/
