@@ -3,7 +3,7 @@ package de.customed.diag.shared.enums;
 /**
  * The project types
  *
- * @author David Weisgerber (c) M&S GmbH
+ * @author David Weisgerber (c) Medtec Science GmbH
  */
 public enum EvaluationType {
 	UNKNOWN,
