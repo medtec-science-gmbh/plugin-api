@@ -17,6 +17,8 @@ jobs:
           printf '%s' "$GPG_SIGNING_KEY" | base64 --decode | gpg --batch --import
           gpg --batch --with-colons --list-secret-keys | grep -q '^sec:' \
             || { echo "No private GPG key was imported"; exit 1; }
+          gpg --list-secret-keys --keyid-format LONG \
+            --with-fingerprint --with-subkey-fingerprint
       - name: Set up Maven Central Repository
         uses: actions/setup-java@v2
         with:
